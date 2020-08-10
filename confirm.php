@@ -39,7 +39,7 @@ if(isset($_GET['i'])) {
 
         // redirect to user to login page with key1
         if($config['notLoggedInGotoLogin']) {
-            header("Location: " . $config['pages']['login'] . "?i=$i");
+            header("Location: " . $config['page']['login'] . "?i=$i");
             die();
         } else {
             echo "You are not logged in so can't verify <br><a href='index.php?i=$i'>click here to login</a>";
